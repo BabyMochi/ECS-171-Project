@@ -196,11 +196,11 @@ print("Testing performance:\n %s" % classification_report(test_target_array, yha
 ## Results
 Model 1 had an exceptional accuracy of 99% for training data and 98% for testing data, with minimal loss at 0.0448
 
-![image](./Figures/Model 1 Figure Results.png)
+![Model 1 Figure Results](https://user-images.githubusercontent.com/76414584/205544112-8356b56d-a7f5-49aa-9be9-0461d41fd153.png)
 
 Model 2 on the other hand had a training accuracy of 55% and testing accuracy of 53% and was not predicting the maskless class at all. The loss for this model ended up being 0.0072.
 
-![image](./Figures/Model 2 Figure Results.png)
+![Model 2 Figure Results](https://user-images.githubusercontent.com/76414584/205544143-d0461b10-2163-4277-b89c-c7985342bba4.png)
 
 ## Discussion
 For the construction of the first model, we used a neural network:
