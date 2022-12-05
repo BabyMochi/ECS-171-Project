@@ -48,7 +48,6 @@ def checkImages(path, image_sizes):
 for path in paths_list:
   image_count += checkImages(path, image_sizes)
 
-#image_count = len(list(data_dir.glob('*/*.jpg')))
 print("Total images:", image_count)
 print("Image sizes (Width, Height):", image_sizes)
 ````
