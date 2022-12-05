@@ -251,7 +251,7 @@ The model only detects whether a person is wearing a mask or not. For a mask to 
 - Added some information to the introduction
 
 ### Awen Li - Collaborator, Writer, and Code Cleaner
-- Worked with Benjamin on ideas to rewrite code for it to be more efficient (training and testing parts)
+- Worked with Benjamin on ideas to rewrite code for it to be more efficient (training and testing part)
 - Fitted results model for better visualization
 - Wrote up on Figure with description and its representation, Discussion on any problems with confounding variables, and added on to the Results graph
 
@@ -259,6 +259,9 @@ The model only detects whether a person is wearing a mask or not. For a mask to 
 - Helped with testing models
 - Created evaluation graph
 - Helped with the discussion and conclusion parts of the write-up
+
+### Rishabh 
+- Did not participate in the project
 
 
 
