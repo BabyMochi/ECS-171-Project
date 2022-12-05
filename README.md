@@ -240,6 +240,7 @@ The model only detects whether a person is wearing a mask or not. For a mask to 
 - Organized meetings to discuss project ideas
 - Created models 1 and 2 and compiled/fitted the models
 - Wrote rough outline for write-up
+- Operated Jetson Nano and testings
 
 ### Steven To - Coder and Writer
 - Coded the steps involved in the data exploration/preprocessing parts of the project
