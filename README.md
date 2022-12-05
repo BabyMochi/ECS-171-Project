@@ -261,7 +261,7 @@ The model only detects whether a person is wearing a mask or not. For a mask to 
 - Helped with the discussion and conclusion parts of the write-up
 
 ### Rishabh 
-- Did not participate in the project
+- Did not participate in the project (dropping class?)
 
 
 
