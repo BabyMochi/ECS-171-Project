@@ -192,6 +192,57 @@ print("Training performance:\n %s" % classification_report(train_target_array, y
 print("Testing performance:\n %s" % classification_report(test_target_array, yhat_test))
 ````
 
+### Model 2
+After creating our first model, we created our second model by doing the following:
+
+- Establishing a sequential model with rescaling as the first step
+- Establishing two Conv2D layers with relu activation following the initial rescaling layer
+- Adding MaxPooling2D layers after each Conv2D layer
+- Adding a Flatten layer after the Conv2D layers to input the data into Dense layers
+- Wrapping up the model with one Dense layer of relu activation followed by another Dense layer of softmax activation
+
+````
+# creating second model
+train_model_2 = Sequential([
+    layers.Rescaling(1./255, input_shape=(100,100,3)),
+    layers.Conv2D(128, 3, padding='same', activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Conv2D(32, 3, padding='same', activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Flatten(),
+    layers.Dense(16, activation='relu'),
+    layers.Dense(1, activation='softmax')
+])
+````
+
+For the compilation of the second model, we used the same parameters as our first model:
+
+````
+# compiling second model
+train_model_2.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+````
+
+Similarly, for fitting the second model, we used the same parameters as our first model:
+
+````
+fitted_Model_2 = train_model_2.fit(train_image_array, train_target_array, validation_split=0.15, batch_size=10, epochs=10)
+````
+
+And to finally analyze the accuracy of our second model for both training and testing data, we thresholded our predicted yhat values and ran a classification report like we did for our first model:
+
+````
+from sklearn.metrics import classification_report
+
+yhat_train2 = train_model_2.predict(train_image_array)
+yhat_train2 = [1 if y>=0.5 else 0 for y in yhat_train2]
+yhat_test2 = train_model_2.predict(test_image_array)
+yhat_test2 = [1 if y>=0.5 else 0 for y in yhat_test2]
+
+print("Training performance of Model 2:\n %s" % classification_report(train_target_array, yhat_train2))
+
+print("Testing performance of Model 2:\n %s" % classification_report(test_target_array, yhat_test2))
+````
+
 ## Results
 Model 1 had an exceptional accuracy of 99% for training data and 98% for testing data, with minimal loss at 0.0448
 
