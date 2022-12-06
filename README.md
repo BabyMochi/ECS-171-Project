@@ -255,12 +255,12 @@ The model only detects whether a person is wearing a mask or not. For a mask to 
 - Fitted results model for better visualization
 - Wrote up on Figure with description and its representation, Discussion on any problems with confounding variables, and added on to the Results graph
 
-### Jordan - Collaborator, Writer, and Coder
+### Jordan Vuong - Collaborator, Writer, and Coder
 - Helped with testing models
 - Created evaluation graph
 - Helped with the discussion and conclusion parts of the write-up
 
-### Rishabh 
+### Rishabh Jains
 - Did not participate in the project (dropping class?)
 
 
